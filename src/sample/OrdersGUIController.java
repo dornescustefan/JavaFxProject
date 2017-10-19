@@ -44,19 +44,20 @@ private Button payOrder;
 @FXML
 private Button newOrder;
 
-    public  List<String> orderList = FXCollections.observableArrayList();
-    public  List<Double> orderPaymentList = FXCollections.observableArrayList();
-    public  ObservableList<String> observableList;
-    private TableView<MenuDataModel> table = new TableView<MenuDataModel>();
-    private ObservableList<MenuDataModel> menuData = FXCollections.observableArrayList();
-    private Calendar now = Calendar.getInstance();
-    private static double totalAmount;
+    private   List<String> orderList = FXCollections.observableArrayList();
+    private List<Double> orderPaymentList = FXCollections.observableArrayList();
     public static double getTotalAmount() {
         return totalAmount;
     }
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
+
+    public ObservableList<String> observableList;
+    private TableView<MenuDataModel> table = new TableView<MenuDataModel>();
+    private ObservableList<MenuDataModel> menuData = FXCollections.observableArrayList();
+    private Calendar now = Calendar.getInstance();
+    private static double totalAmount;
 
     public void initialize(){
 
