@@ -7,22 +7,23 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuItem?>
 
-<VBox alignment="CENTER" prefHeight="400" prefWidth="300" spacing="10" style="-fx-background-color: #336699;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainGUIController">
+<?import javafx.scene.layout.HBox?>
 
-    <VBox id="AnchorPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" spacing="10">
-        <children>
-            <MenuBar >
-               <menus>
-                    <Menu mnemonicParsing="false" text="Help">
-                        <items>
-                            <MenuItem mnemonicParsing="false" text="How to use" fx:id="help"/>
-                        </items>
-                    </Menu>
-                </menus>
-            </MenuBar>
-        </children>
-    </VBox>
+<VBox alignment="TOP_LEFT" prefHeight="400" prefWidth="300"  style="-fx-background-color: #336699;" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainGUIController">
 
+      <children>
+        <MenuBar>
+            <menus>
+                <Menu  text="Help" >
+                    <items>
+                        <MenuItem text="How to use" fx:id="help"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+
+    <VBox  alignment="CENTER" spacing="10" style="-fx-padding: 50 0 0 0;">
     <children>
         <Button fx:id="table1" minWidth="80" text="Table1" />
         <Button fx:id="table2" minWidth="80" text="Table2" />
@@ -34,4 +35,5 @@
         <Button fx:id="table8" minWidth="80" text="Table8" />
     </children>
 
+</VBox>
 </VBox>

@@ -112,19 +112,7 @@ public class MainGUIController  {
 
             stage.setScene(scene);
             stage.setResizable(false);
-            stage.show();
-
-            /*Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setTitle("How to use");
-            alert.setHeaderText(null);
-            alert.setContentText("1. Click on a Table button, a table order form will pop up. "+ System.lineSeparator()
-                                +"2.Choose a pizza from the menu list, choose quantity from drop down list, press Add to Order button and Click on the Menu List" + System.lineSeparator()
-                                +"3.Press Place Order Button, the order will appear in the Kitchen window"+ System.lineSeparator()
-                                +"4.In the Kitchen window Click on the order Press the Cook Button and after the Ready Button"+ System.lineSeparator()
-                                +"5.On the Table order form press the Order Served Button and after the Pay Order Button "+ System.lineSeparator()
-            );
-
-            alert.showAndWait();*/
-        });
+            stage.showAndWait();
+             });
     }
 }
