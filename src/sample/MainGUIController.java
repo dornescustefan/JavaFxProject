@@ -27,15 +27,6 @@ import static javafx.scene.paint.Color.DARKBLUE;
  * Created by DOS on 8/20/2017.
  */
 public class MainGUIController  {
-    OrdersGUI  Table1 = new OrdersGUI();
-    OrdersGUI  Table2 = new OrdersGUI();
-    OrdersGUI  Table3 = new OrdersGUI();
-    OrdersGUI  Table4 = new OrdersGUI();
-    OrdersGUI  Table5 = new OrdersGUI();
-    OrdersGUI  Table6 = new OrdersGUI();
-    OrdersGUI  Table7 = new OrdersGUI();
-    OrdersGUI  Table8 = new OrdersGUI();
-
     @FXML
     private Button table1;
     @FXML
@@ -54,6 +45,16 @@ public class MainGUIController  {
     private Button table8;
     @FXML
     private MenuItem help;
+
+    OrdersGUI  Table1 = new OrdersGUI();
+    OrdersGUI  Table2 = new OrdersGUI();
+    OrdersGUI  Table3 = new OrdersGUI();
+    OrdersGUI  Table4 = new OrdersGUI();
+    OrdersGUI  Table5 = new OrdersGUI();
+    OrdersGUI  Table6 = new OrdersGUI();
+    OrdersGUI  Table7 = new OrdersGUI();
+    OrdersGUI  Table8 = new OrdersGUI();
+
 
     public void initialize(){
         table1.setOnAction(event -> {
